@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	div{
+		width: 400px;
+		height: 400px;
+		background: black;
+	}
+</style>
+<body>
+	<div></div>
+</body>
+<script type="text/javascript">
+	var flag = false;
+
+		$("div").click( function  () {
+			if(!flag){
+				$(this).css("background", "yellow");
+				flag = true;
+			}
+			else {
+				$(this).css("background", "red");
+				flag = false;
+			}
+		});
+	
+</script>
+</html>
