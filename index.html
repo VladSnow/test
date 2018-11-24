@@ -3,31 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 </head>
-<style type="text/css">
-	div{
-		width: 400px;
-		height: 400px;
-		background: black;
-	}
-</style>
 <body>
-	<div></div>
-</body>
-<script type="text/javascript">
-	var flag = false;
+	<div class="mainDiv"></div>
 
-		$("div").click( function  () {
-			if(!flag){
-				$(this).css("background", "yellow");
-				flag = true;
-			}
-			else {
-				$(this).css("background", "red");
-				flag = false;
-			}
-		});
-	
-</script>
+	<!--	scripts		-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
